@@ -12,15 +12,15 @@ body{grid-template-rows:auto 1fr auto auto;background:#fff1f3;background-image:r
 #shareArea{position:fixed;left:max(18px,env(safe-area-inset-left));bottom:max(18px,env(safe-area-inset-bottom));z-index:25;width:auto;margin:0;padding:0;background:none}#shareArea>p,#sharehint{display:none}#shareArea .share{display:flex;align-items:center;gap:12px;padding:14px 21px;border-radius:50px;border:1px solid #f6c4d3;background:linear-gradient(130deg,#fff9f4,#fbe0e9);color:#792d47;box-shadow:0 7px 25px #792d4726;font-size:13px;font-weight:600}#shareArea .share span{font-size:20px}#shareArea .share:hover{transform:translateY(-3px)}
 #shareDialog{box-sizing:border-box;position:fixed;inset:0;margin:auto;width:min(410px,calc(100vw - 30px));max-width:410px;max-height:calc(100dvh - 24px);padding:27px 25px 20px;border:1px solid #e5bdc8;border-radius:23px;background:linear-gradient(145deg,#fffdf8,#fff0f3);color:#792d47;overflow:hidden;box-shadow:0 24px 90px #52203740;text-align:center}#shareDialog:before{content:'';position:absolute;inset:9px;border:1px solid #dba5b54d;border-radius:16px;pointer-events:none}#shareDialog::backdrop{background:#48223361;backdrop-filter:blur(7px)}#shareDialog[open]{animation:letter-pop .25s ease-out}#shareDialog .close{z-index:2;right:14px;top:10px;color:#9a6075;font-size:24px;border:0;background:none;cursor:pointer}.share-stamp{position:absolute;top:22px;left:23px;font:25px Georgia;transform:rotate(-15deg);opacity:.6}.share-kicker{display:block;font:600 8px/1.5 Arial,sans-serif;letter-spacing:.20em;margin:4px 0 21px;color:#aa7586}.share-envelope{position:relative;width:91px;height:58px;margin:0 auto 15px;border-radius:5px;background:linear-gradient(145deg,#eeb5c4,#f7d4dd);box-shadow:0 8px 15px #792d4718;transform:rotate(-6deg)}.share-envelope:before{content:'';position:absolute;left:0;right:0;top:0;border-left:45px solid transparent;border-right:45px solid transparent;border-top:33px solid #ffe8ee}.share-envelope span{position:absolute;left:35px;top:22px;font:25px Georgia;color:#a43e61}#shareDialog h2{font:italic 35px/1.12 Georgia,serif;letter-spacing:-.04em;margin:0 0 9px}.share-subtitle{font-size:12px;line-height:1.5;margin:0 0 20px;color:#986e7b}#shareDialog .sharechoices{display:flex;justify-content:center;gap:9px;margin:0 0 20px}#shareDialog .sharechoices>*{flex:1;min-width:0;padding:12px 9px;border-radius:12px;font-size:12px;text-decoration:none;box-sizing:border-box}#shareDialog .whatsapp{background:#fffaf8;color:#792d47;border:1px solid #d9a1b2}#shareDialog .sharelabel{display:block;text-align:left;font-size:10px;color:#9b7080;margin:0 0 8px}#shareDialog .copyrow{display:flex;gap:6px;padding:5px;border:1px solid #e6c8d0;border-radius:12px;background:#fffcfa;margin:0}#shareDialog .copyrow input{width:0;min-width:0;flex:1;padding:8px;border:0;background:transparent;font-size:11px;color:#936775;outline-offset:-2px}#shareDialog .copyrow button{flex:none;border:0;border-radius:8px;background:#792d47;color:#fff8f6;padding:10px 12px;font-size:11px;cursor:pointer}#shareDialog .copyrow button:disabled{opacity:.5;cursor:default}#shareDialog .saveimage{display:inline-block;font-size:11px;margin:15px 0 0;color:#a26179}#shareStatus{font-size:10px;line-height:1.5;margin:9px 0 0;color:#926775;overflow-wrap:anywhere}#shareStatus:empty{display:none}.share-signoff{display:block;font:italic 12px Georgia;color:#b17f90;margin-top:16px}@keyframes letter-pop{from{opacity:0;transform:translateY(14px) scale(.96)}to{opacity:1;transform:none}}@media(max-height:600px){#shareDialog{padding:18px 21px 14px}.share-kicker{margin-bottom:10px}.share-envelope{width:66px;height:40px;margin-bottom:10px}.share-envelope:before{border-left-width:33px;border-right-width:33px;border-top-width:24px}.share-envelope span{left:25px;top:14px;font-size:20px}#shareDialog h2{font-size:28px}.share-subtitle{margin-bottom:12px}#shareDialog .sharechoices{margin-bottom:12px}.share-signoff{margin-top:10px}}@media(max-height:430px){.share-envelope,.share-signoff,.share-stamp{display:none}.share-kicker{margin:0 0 8px}#shareDialog{padding:17px 22px 12px}#shareDialog h2{font-size:26px}.share-subtitle{margin-bottom:9px}#shareDialog .sharechoices>*{padding:9px}#shareDialog .saveimage{margin-top:8px}}@media(prefers-reduced-motion:reduce){#shareDialog[open]{animation:none}}
 </style>
-<style>.ganesha-brandmark{border:0;border-radius:0;flex-shrink:0}.ganesha-brandmark svg{display:block;width:100%;height:100%;overflow:visible;filter:drop-shadow(0 1px 1px #80510c45)}</style>
+<style>.ganesha-brandmark{border:0;border-radius:0;flex-shrink:0}.brand .ganesha-brandmark{width:clamp(40px,9vw,52px);height:clamp(44px,10vw,57px)}.ganesha-brandmark svg{display:block;width:100%;height:100%;overflow:visible;filter:drop-shadow(0 1px 0 #fff5d4) drop-shadow(0 1px 2px #8b520348)}</style>
 <header><a class="brand" href="#home"><span class="brandmark ganesha-brandmark" aria-hidden="true">
-  <svg viewBox="24 15 200 251" xmlns="http://www.w3.org/2000/svg" focusable="false">
+  <svg viewBox="28 19 192 244" xmlns="http://www.w3.org/2000/svg" focusable="false">
     <defs>
       <linearGradient id="ganesha-gold" x1="0" y1="0" x2="85%" y2="100%" gradientUnits="objectBoundingBox">
-        <stop stop-color="#9e5c07"/>
-        <stop offset=".32" stop-color="#e9a70d"/>
-        <stop offset=".62" stop-color="#ffe063"/>
-        <stop offset="1" stop-color="#ae6a09"/>
+        <stop stop-color="#86490a"/>
+        <stop offset=".32" stop-color="#cc8816"/>
+        <stop offset=".62" stop-color="#f5c143"/>
+        <stop offset="1" stop-color="#8a4908"/>
       </linearGradient>
     </defs>
     <g fill="none" stroke="url(#ganesha-gold)" stroke-linecap="round" stroke-linejoin="round">
@@ -39,8 +39,8 @@ body{grid-template-rows:auto 1fr auto auto;background:#fff1f3;background-image:r
     </g>
   </svg>
 </span> Marriage Invitation<span class="branddot">.</span></a><nav aria-label="Pages"><a href="#home">Home</a><a href="#about">About Us</a></nav></header>
-<canvas id="heartRain" aria-hidden="true"></canvas><div class="ambient" aria-hidden="true"><span>♡</span><span>✧</span><span>♡</span><span>✦</span><span>♡</span></div><main><section class="intro" id="intro" hidden></section><section id="home" class="love-stage" aria-label="A little love letter"><div class="love-envelope" id="loveEnvelope"><div class="envelope-back"></div><div class="love-paper" id="lovePaper" aria-hidden="true"><span class="paper-flower">❦</span><h1>Welcome to Our Marriage</h1></div><div class="envelope-front"></div><div class="envelope-flap"></div><button class="heart-seal" id="openLetter" type="button" aria-label="Open the heart seal" aria-expanded="false"><svg viewBox="0 0 100 90" aria-hidden="true"><path d="M50 83C38 72 5 51 5 27C5 0 39-3 50 17C61-3 95 0 95 27C95 51 62 72 50 83Z" fill="#b82353" stroke="#ec9ab1" stroke-width="3"/><path d="M24 24Q30 12 41 22" fill="none" stroke="#ffe0e8" stroke-width="4" stroke-linecap="round" opacity=".7"/><path d="M50 60C44 54 30 45 30 35C30 23 44 22 50 31C56 22 70 23 70 35C70 45 56 54 50 60Z" fill="none" stroke="#f5b7c9" stroke-width="1.5"/></svg></button><span class="envelope-star star-a">✧</span><span class="envelope-star star-b">✧</span></div><p class="open-hint" id="openHint" role="status" aria-live="polite">Tap the heart to open your card ♡</p><button id="replayLetter" class="replay-letter" hidden>Close the letter ♡</button></section>
-<section id="about" class="about-grid" hidden><article class="aboutcard about-intro"><div class="tag">Made with love</div><h2>About Us</h2><p class="aboutlead">A little letter. A lot of love. ♥</p><a class="pill" href="#home">Open the letter ♡</a></article><article class="aboutcard about-creator"><div class="creator-profile"><span class="creator-label">CREATED BY</span><h3 class="creator-name">Shivshakti Goswami</h3><div class="instaSlot" id="instaSlot"><a class="instagram-button" id="instaLink" href="https://www.instagram.com/shakti_0.5/" target="_blank" rel="noopener noreferrer"><svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r=".8" fill="currentColor" stroke="none"/></svg><span>Connect on Instagram</span><small>@shakti_0.5</small><span aria-hidden="true">↗</span></a><a class="instagram-qr" href="https://www.instagram.com/shakti_0.5/" target="_blank" rel="noopener noreferrer" aria-label="Open Shivshakti Goswami on Instagram"><img id="instaQR" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAXIAAAFyAQAAAADAX2ykAAACiElEQVR4nO2bTW7bMBCFv6kEeCkBOUCOQt2gR+qZcgPzKD5AAXIZQMLrgqTsuAjSoLIaFcON9fMtHvAw0syjbOIzK377FA7OO++888477/x7vNXVY1PuMRsBsplNud2bdtTj/MZ8kCQlgOHVdAZsGiSgkyTpLf9oPc5vxPf1N48QXkDROhn0s8hPMwAG3byTHue35fu7cwvpCcFipZLJ++pxflv+3l/F5xkDECxYeNlXj/OP4QdJ5/VqSJ3MrJovab7nH63H+U35aGZmI9iPSyvpkDoBS2mf99Xj/EY8ertgmGmV3Ol+nb+afuf/hLcpmxHN2mh0BXIPcVx8/j0mXx7GgrmH4WdvIVFn3TgtBmCEhGwfPc4/grcpnwT5pFq/uYfyfE4AuRb2V9Xv/LurhVPruzaBznQilCNKulUiLn//Hoxv/g4zzdBObSBqnp+vR19Nv/MfrFa1t71yaaKlmVLOSuD1e2DepuG17hVNAOFyEtF6iM8z5dqeepzfil/3F55EfFaJJourQUtf5iOGudc+epx/CB/HxSCbQe6R0mKQT4JBIo5763F+I37Nr2ZqdDWouCql7ibO8v7qkHztn0OqAxHQidD659ppJe+fD8qv/TPcDEl1KlrHJff3qPzqZcuqQuqk8zC/pdzfg/K/7x/R8qv6pG6fXvn8e0Seq6vcGDqoFnFYmyyv3yPyrb9qIVYZiMJazuGaXrq/B+ZbdCVd+npqI+XDDsLlJN8/+i/4+ml7WYvVfOMaUn51/c5/xA8zLd8AnVms1vQ/0uP83/DNuEFABsXJ1pudLKQF4vdX8/z5kHz1NxZTOyykEWDpRR6hhFj76XF+W978/93OO++88847vzv/C1fR5g66vAOGAAAAAElFTkSuQmCC" width="164" height="164" alt="Scan this QR code to visit @shakti_0.5 on Instagram"><span>Scan to say hello ♡</span></a></div></div></article></section>
+<canvas id="heartRain" aria-hidden="true"></canvas><div class="ambient" aria-hidden="true"><span>♡</span><span>✧</span><span>♡</span><span>✦</span><span>♡</span></div><main><section class="intro" id="intro" hidden></section><section id="home" class="love-stage" aria-label="A little love letter"><div class="love-envelope" id="loveEnvelope"><div class="envelope-back"></div><div class="love-paper" id="lovePaper" aria-hidden="true"><span class="paper-flower">❦</span><h1 class="card-welcome">Welcome<span>Aryan Weds Araya</span></h1></div><div class="envelope-front"></div><div class="envelope-flap"></div><button class="heart-seal" id="openLetter" type="button" aria-label="Open the heart seal" aria-expanded="false"><svg viewBox="0 0 100 90" aria-hidden="true"><path d="M50 83C38 72 5 51 5 27C5 0 39-3 50 17C61-3 95 0 95 27C95 51 62 72 50 83Z" fill="#b82353" stroke="#ec9ab1" stroke-width="3"/><path d="M24 24Q30 12 41 22" fill="none" stroke="#ffe0e8" stroke-width="4" stroke-linecap="round" opacity=".7"/><path d="M50 60C44 54 30 45 30 35C30 23 44 22 50 31C56 22 70 23 70 35C70 45 56 54 50 60Z" fill="none" stroke="#f5b7c9" stroke-width="1.5"/></svg></button><span class="envelope-star star-a">✧</span><span class="envelope-star star-b">✧</span></div><p class="open-hint" id="openHint" role="status" aria-live="polite">Tap the heart to open your card ♡</p><button id="replayLetter" class="replay-letter" hidden>Close the letter ♡</button></section>
+<section id="about" class="about-grid" hidden><article class="aboutcard about-intro"><h2>About Us</h2><a class="pill" href="#home">Open the card</a></article><article class="aboutcard about-creator"><div class="creator-profile"><span class="creator-label">CREATED BY</span><h3 class="creator-name">Shivshakti Goswami</h3><div class="instaSlot" id="instaSlot"><a class="instagram-button" id="instaLink" href="https://www.instagram.com/shakti_0.5/" target="_blank" rel="noopener noreferrer"><svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r=".8" fill="currentColor" stroke="none"/></svg><span>Connect on Instagram</span><small>@shakti_0.5</small><span aria-hidden="true">↗</span></a><a class="instagram-qr" href="https://www.instagram.com/shakti_0.5/" target="_blank" rel="noopener noreferrer" aria-label="Open Shivshakti Goswami on Instagram"><img id="instaQR" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAXIAAAFyAQAAAADAX2ykAAACiElEQVR4nO2bTW7bMBCFv6kEeCkBOUCOQt2gR+qZcgPzKD5AAXIZQMLrgqTsuAjSoLIaFcON9fMtHvAw0syjbOIzK377FA7OO++888477/x7vNXVY1PuMRsBsplNud2bdtTj/MZ8kCQlgOHVdAZsGiSgkyTpLf9oPc5vxPf1N48QXkDROhn0s8hPMwAG3byTHue35fu7cwvpCcFipZLJ++pxflv+3l/F5xkDECxYeNlXj/OP4QdJ5/VqSJ3MrJovab7nH63H+U35aGZmI9iPSyvpkDoBS2mf99Xj/EY8ertgmGmV3Ol+nb+afuf/hLcpmxHN2mh0BXIPcVx8/j0mXx7GgrmH4WdvIVFn3TgtBmCEhGwfPc4/grcpnwT5pFq/uYfyfE4AuRb2V9Xv/LurhVPruzaBznQilCNKulUiLn//Hoxv/g4zzdBObSBqnp+vR19Nv/MfrFa1t71yaaKlmVLOSuD1e2DepuG17hVNAOFyEtF6iM8z5dqeepzfil/3F55EfFaJJourQUtf5iOGudc+epx/CB/HxSCbQe6R0mKQT4JBIo5763F+I37Nr2ZqdDWouCql7ibO8v7qkHztn0OqAxHQidD659ppJe+fD8qv/TPcDEl1KlrHJff3qPzqZcuqQuqk8zC/pdzfg/K/7x/R8qv6pG6fXvn8e0Seq6vcGDqoFnFYmyyv3yPyrb9qIVYZiMJazuGaXrq/B+ZbdCVd+npqI+XDDsLlJN8/+i/4+ml7WYvVfOMaUn51/c5/xA8zLd8AnVms1vQ/0uP83/DNuEFABsXJ1pudLKQF4vdX8/z5kHz1NxZTOyykEWDpRR6hhFj76XF+W978/93OO++88847vzv/C1fR5g66vAOGAAAAAElFTkSuQmCC" width="164" height="164" alt="Scan this QR code to visit @shakti_0.5 on Instagram"><span>Scan to say hello ♡</span></a></div></div></article></section>
 
 </main><section id="shareArea" hidden class="sharearea"><p>Share a little love ♥</p><button id="share" class="share" type="button" aria-haspopup="dialog" aria-controls="shareDialog"><span class="share-button-label">Share the Card</span><span class="share-orb share-arrow" aria-hidden="true"><svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 5l7 7-7 7"/></svg></span></button><small id="sharehint" role="status"></small></section><dialog id="shareDialog" aria-labelledby="shareTitle"><div class="share-heart-bg" aria-hidden="true"><span>♥</span><span>♡</span><span>♥</span><span>✧</span><span>♥</span><span>♡</span></div><button class="close" type="button" data-close-dialog="shareDialog" aria-label="Close sharing">×</button><div class="share-art sealed-share-art" aria-hidden="true"><div class="mini-envelope"><div class="mini-envelope-back"></div><div class="mini-envelope-front"></div><div class="mini-envelope-flap"></div><span class="mini-heart-seal">♥</span></div><span class="seal-butterfly seal-butterfly-0"><svg viewBox="0 0 100 100"><g fill="#d95489" stroke="#ffe2ef" stroke-width="2"><path class="seal-wing-l" d="M49 49C26 0 0 15 13 43Q16 54 44 57C3 50 14 92 36 78Q48 71 49 49"/><path class="seal-wing-r" d="M51 49C74 0 100 15 87 43Q84 54 56 57C97 50 86 92 64 78Q52 71 51 49"/></g><path d="M50 38V72M49 41Q38 25 40 24M51 41Q62 25 60 24" stroke="#71304e" stroke-width="3" fill="none" stroke-linecap="round"/></svg></span><span class="seal-butterfly seal-butterfly-1"><svg viewBox="0 0 100 100"><g fill="#ee9fbd" stroke="#fff0f7" stroke-width="2"><path class="seal-wing-l" d="M49 49C26 0 0 15 13 43Q16 54 44 57C3 50 14 92 36 78Q48 71 49 49"/><path class="seal-wing-r" d="M51 49C74 0 100 15 87 43Q84 54 56 57C97 50 86 92 64 78Q52 71 51 49"/></g><path d="M50 38V72M49 41Q38 25 40 24M51 41Q62 25 60 24" stroke="#71304e" stroke-width="3" fill="none" stroke-linecap="round"/></svg></span><span class="seal-butterfly seal-butterfly-2"><svg viewBox="0 0 100 100"><g fill="#d96b9a" stroke="#ffe4f0" stroke-width="2"><path class="seal-wing-l" d="M49 49C26 0 0 15 13 43Q16 54 44 57C3 50 14 92 36 78Q48 71 49 49"/><path class="seal-wing-r" d="M51 49C74 0 100 15 87 43Q84 54 56 57C97 50 86 92 64 78Q52 71 51 49"/></g><path d="M50 38V72M49 41Q38 25 40 24M51 41Q62 25 60 24" stroke="#71304e" stroke-width="3" fill="none" stroke-linecap="round"/></svg></span><span class="seal-butterfly seal-butterfly-3"><svg viewBox="0 0 100 100"><g fill="#f2b5ce" stroke="#fff4f9" stroke-width="2"><path class="seal-wing-l" d="M49 49C26 0 0 15 13 43Q16 54 44 57C3 50 14 92 36 78Q48 71 49 49"/><path class="seal-wing-r" d="M51 49C74 0 100 15 87 43Q84 54 56 57C97 50 86 92 64 78Q52 71 51 49"/></g><path d="M50 38V72M49 41Q38 25 40 24M51 41Q62 25 60 24" stroke="#71304e" stroke-width="3" fill="none" stroke-linecap="round"/></svg></span><span class="seal-butterfly seal-butterfly-4"><svg viewBox="0 0 100 100"><g fill="#d95489" stroke="#ffe2ef" stroke-width="2"><path class="seal-wing-l" d="M49 49C26 0 0 15 13 43Q16 54 44 57C3 50 14 92 36 78Q48 71 49 49"/><path class="seal-wing-r" d="M51 49C74 0 100 15 87 43Q84 54 56 57C97 50 86 92 64 78Q52 71 51 49"/></g><path d="M50 38V72M49 41Q38 25 40 24M51 41Q62 25 60 24" stroke="#71304e" stroke-width="3" fill="none" stroke-linecap="round"/></svg></span><span class="seal-butterfly seal-butterfly-5"><svg viewBox="0 0 100 100"><g fill="#ee9fbd" stroke="#fff0f7" stroke-width="2"><path class="seal-wing-l" d="M49 49C26 0 0 15 13 43Q16 54 44 57C3 50 14 92 36 78Q48 71 49 49"/><path class="seal-wing-r" d="M51 49C74 0 100 15 87 43Q84 54 56 57C97 50 86 92 64 78Q52 71 51 49"/></g><path d="M50 38V72M49 41Q38 25 40 24M51 41Q62 25 60 24" stroke="#71304e" stroke-width="3" fill="none" stroke-linecap="round"/></svg></span><span class="seal-butterfly seal-butterfly-6"><svg viewBox="0 0 100 100"><g fill="#d96b9a" stroke="#ffe4f0" stroke-width="2"><path class="seal-wing-l" d="M49 49C26 0 0 15 13 43Q16 54 44 57C3 50 14 92 36 78Q48 71 49 49"/><path class="seal-wing-r" d="M51 49C74 0 100 15 87 43Q84 54 56 57C97 50 86 92 64 78Q52 71 51 49"/></g><path d="M50 38V72M49 41Q38 25 40 24M51 41Q62 25 60 24" stroke="#71304e" stroke-width="3" fill="none" stroke-linecap="round"/></svg></span><span class="seal-butterfly seal-butterfly-7"><svg viewBox="0 0 100 100"><g fill="#f2b5ce" stroke="#fff4f9" stroke-width="2"><path class="seal-wing-l" d="M49 49C26 0 0 15 13 43Q16 54 44 57C3 50 14 92 36 78Q48 71 49 49"/><path class="seal-wing-r" d="M51 49C74 0 100 15 87 43Q84 54 56 57C97 50 86 92 64 78Q52 71 51 49"/></g><path d="M50 38V72M49 41Q38 25 40 24M51 41Q62 25 60 24" stroke="#71304e" stroke-width="3" fill="none" stroke-linecap="round"/></svg></span></div><h2 id="shareTitle">Share a little love</h2><div class="sharechoices"><a id="whatsappShare" class="pill whatsapp" target="_blank" rel="noopener noreferrer"><span class="share-app-icon" aria-hidden="true">↗</span><span>WhatsApp</span></a><button id="nativeShare" class="yes" type="button"><span class="share-app-icon" aria-hidden="true">⋯</span><span>More apps</span></button></div><label class="sharelabel" for="shareUrl"><span>or copy the link</span></label><div class="copyrow"><input id="shareUrl" type="text" readonly aria-label="Love letter link"><button id="copyLoveLink" type="button">Copy link</button></div><p id="shareStatus" role="status" aria-live="polite"></p></dialog>
 <style>dialog .close,#shareDialog .close{position:absolute;top:10px;right:10px;z-index:100;display:grid;place-items:center;width:40px;height:40px;padding:0;min-width:40px;border:1px solid #e6c4ce;border-radius:50%;background:#fff8f5;color:#792d47;font:26px/1 Arial,sans-serif;cursor:pointer;pointer-events:auto;touch-action:manipulation;transform:none}dialog .close:hover{background:#f9e1e9}dialog .close:focus-visible{outline:2px solid #792d47;outline-offset:2px}</style><style id="share-redesign-v6">
@@ -111,7 +111,7 @@ get('shareDialog').addEventListener('click',e=>{if(e.target===get('shareDialog')
  resize();addEventListener('resize',resize);frame=requestAnimationFrame(draw);document.addEventListener('visibilitychange',()=>{if(document.hidden)cancelAnimationFrame(frame);else if(!reduced){last=0;frame=requestAnimationFrame(draw);}});
 })();
 </script><style>
-main{display:block;width:min(1040px,92%);margin:20px auto 55px}#intro{display:none!important}.love-stage{text-align:center;min-height:540px;display:flex;flex-direction:column;align-items:center;justify-content:center;padding:25px 0 15px}.letter-kicker{font:600 10px/1.5 Arial;letter-spacing:.25em;color:#b17088;margin:0 0 120px}.love-envelope{position:relative;width:360px;height:235px;max-width:84vw;perspective:1100px;animation:letter-swing 4.8s ease-in-out infinite;filter:drop-shadow(0 25px 20px #a7335426)}.envelope-back{position:absolute;inset:0;border-radius:12px;background:linear-gradient(135deg,#ed9fb6,#f7c0d0);border:1px solid #d88ca6}.envelope-front{position:absolute;inset:0;z-index:4;background:linear-gradient(145deg,#f9ccda,#e994b0);clip-path:polygon(0 0,50% 55%,100% 0,100% 100%,0 100%);border-radius:10px}.envelope-front:after{content:'';position:absolute;inset:0;clip-path:polygon(0 100%,50% 46%,100% 100%);background:linear-gradient(180deg,#ffdae4,#efabc3);border-bottom:2px solid #e5a0b8}.envelope-flap{position:absolute;inset:0;z-index:5;background:linear-gradient(160deg,#ffd5e1,#e998b3);clip-path:polygon(0 0,100% 0,50% 58%);transform-origin:top;transition:transform .76s ease-in-out,z-index 0s .38s}.heart-seal{position:absolute;z-index:6;left:50%;top:43%;transform:translate(-50%,-20%);width:78px;height:74px;padding:0;border:0;background:none;border-radius:50%;filter:drop-shadow(0 5px 4px #8d214b44);transition:opacity .5s,scale .5s}.heart-seal svg{width:100%;height:100%}.heart-seal:hover{scale:1.1}.heart-seal:focus-visible{outline:3px solid #a62f59;outline-offset:6px}.love-paper{position:absolute;left:7%;top:9%;width:86%;height:90%;z-index:2;background:linear-gradient(135deg,#fffdf5,#fff4ef);border:1px solid #e8c4cc;border-radius:8px;padding:17px 10px;opacity:0;transform:translateY(0);transition:transform 1s cubic-bezier(.35,0,.22,1),opacity .24s;box-shadow:0 8px 25px #84234913}.love-paper:before{content:'';position:absolute;inset:8px;border:1px solid #dba5b24d;border-radius:3px;pointer-events:none}.love-paper p{font:italic 12px/1.5 Georgia;color:#aa6c80;margin:8px 0}.love-paper h1{font:italic 48px/1.15 Georgia;color:#b32150;margin:9px 0;letter-spacing:-.055em;opacity:0;transition:opacity 1s,transform 1s;transform:translateY(10px)}.paper-flower{font:25px Georgia;color:#b4768b}.paper-heart{color:#ce3764;font:24px Georgia}.envelope-star{position:absolute;color:#c36b8d;font:36px Georgia}.star-a{right:-32px;top:-40px}.star-b{left:-31px;bottom:5px;font-size:28px}.open-hint{font:italic 16px Georgia;color:#a45e79;margin:42px 0 10px}.replay-letter{font:12px Arial;padding:10px 20px;background:#fff5f7;color:#98405f;border-color:#e2b4c5}.love-envelope.unsealing{animation:none;transform:rotate(0);transition:transform .3s ease-out}.unsealing .heart-seal{opacity:0;scale:.65;pointer-events:none}.love-envelope.flap-open .envelope-flap{transform:rotateX(180deg);z-index:1}.love-envelope.open .love-paper{opacity:1;transform:translateY(-62%)}.love-envelope.revealed h1{opacity:1;transform:translateY(0)}.butterfly{position:fixed;left:0;top:0;z-index:50;pointer-events:none;will-change:transform,opacity}.butterfly svg{width:100%;height:100%;overflow:visible;filter:drop-shadow(0 3px 2px #8f36652b)}.butterfly .wing-left{transform-origin:50px 50px;animation:wing-flutter .22s ease-in-out infinite alternate}.butterfly .wing-right{transform-origin:50px 50px;animation:wing-flutter .22s ease-in-out infinite alternate-reverse}@keyframes wing-flutter{from{transform:scaleX(.25) rotate(-5deg)}to{transform:scaleX(1) rotate(7deg)}}@keyframes letter-swing{0%,100%{transform:rotate(-5deg) translateY(0)}50%{transform:rotate(4deg) translateY(-12px)}}@media(max-width:600px){.love-stage{min-height:510px;padding-top:25px}.love-envelope{width:310px;height:205px}.letter-kicker{font-size:8px;margin-bottom:110px}.love-paper h1{font-size:42px}.love-paper p{font-size:10px}.love-paper{padding:12px 8px}.heart-seal{width:68px;height:64px}.open-hint{font-size:14px;margin-top:35px}.star-a{right:-19px}.star-b{left:-20px}main{margin-top:8px;margin-bottom:65px}}@media(prefers-reduced-motion:reduce){.love-envelope{animation:none}.butterfly .wing-left,.butterfly .wing-right{animation:none}}
+main{display:block;width:min(1040px,92%);margin:20px auto 55px}#intro{display:none!important}.love-stage{text-align:center;min-height:540px;display:flex;flex-direction:column;align-items:center;justify-content:center;padding:25px 0 15px}.letter-kicker{font:600 10px/1.5 Arial;letter-spacing:.25em;color:#b17088;margin:0 0 120px}.love-envelope{position:relative;width:360px;height:235px;max-width:84vw;perspective:1100px;animation:letter-swing 4.8s ease-in-out infinite;filter:drop-shadow(0 25px 20px #a7335426)}.envelope-back{position:absolute;inset:0;border-radius:12px;background:linear-gradient(135deg,#ed9fb6,#f7c0d0);border:1px solid #d88ca6}.envelope-front{position:absolute;inset:0;z-index:4;background:linear-gradient(145deg,#f9ccda,#e994b0);clip-path:polygon(0 0,50% 55%,100% 0,100% 100%,0 100%);border-radius:10px}.envelope-front:after{content:'';position:absolute;inset:0;clip-path:polygon(0 100%,50% 46%,100% 100%);background:linear-gradient(180deg,#ffdae4,#efabc3);border-bottom:2px solid #e5a0b8}.envelope-flap{position:absolute;inset:0;z-index:5;background:linear-gradient(160deg,#ffd5e1,#e998b3);clip-path:polygon(0 0,100% 0,50% 58%);transform-origin:top;transition:transform .76s ease-in-out,z-index 0s .38s}.heart-seal{position:absolute;z-index:6;left:50%;top:43%;transform:translate(-50%,-20%);width:78px;height:74px;padding:0;border:0;background:none;border-radius:50%;filter:drop-shadow(0 5px 4px #8d214b44);transition:opacity .5s,scale .5s}.heart-seal svg{width:100%;height:100%}.heart-seal:hover{scale:1.1}.heart-seal:focus-visible{outline:3px solid #a62f59;outline-offset:6px}.love-paper{position:absolute;left:7%;top:9%;width:86%;height:90%;z-index:2;background:linear-gradient(135deg,#fffdf5,#fff4ef);border:1px solid #e8c4cc;border-radius:8px;padding:17px 10px;opacity:0;transform:translateY(0);transition:transform 1s cubic-bezier(.35,0,.22,1),opacity .24s;box-shadow:0 8px 25px #84234913}.love-paper:before{content:'';position:absolute;inset:8px;border:1px solid #dba5b24d;border-radius:3px;pointer-events:none}.love-paper p{font:italic 12px/1.5 Georgia;color:#aa6c80;margin:8px 0}.love-paper h1{font:italic 48px/1.15 Georgia;color:#b32150;margin:9px 0;letter-spacing:-.055em;opacity:0;transition:opacity 1s,transform 1s;transform:translateY(10px)}.love-paper h1.card-welcome{font-size:clamp(25px,7vw,40px);color:#986016;line-height:1.04;letter-spacing:-.025em;margin:4px 0;text-shadow:0 1px #fff8df}.card-welcome span{display:block;margin-top:4px;font-size:clamp(13px,3.6vw,22px);letter-spacing:.015em}.paper-flower{font:25px Georgia;color:#b4768b}.paper-heart{color:#ce3764;font:24px Georgia}.envelope-star{position:absolute;color:#c36b8d;font:36px Georgia}.star-a{right:-32px;top:-40px}.star-b{left:-31px;bottom:5px;font-size:28px}.open-hint{font:italic 16px Georgia;color:#a45e79;margin:42px 0 10px}.replay-letter{font:12px Arial;padding:10px 20px;background:#fff5f7;color:#98405f;border-color:#e2b4c5}.love-envelope.unsealing{animation:none;transform:rotate(0);transition:transform .3s ease-out}.unsealing .heart-seal{opacity:0;scale:.65;pointer-events:none}.love-envelope.flap-open .envelope-flap{transform:rotateX(180deg);z-index:1}.love-envelope.open .love-paper{opacity:1;transform:translateY(-62%)}.love-envelope.revealed h1{opacity:1;transform:translateY(0)}.butterfly{position:fixed;left:0;top:0;z-index:50;pointer-events:none;will-change:transform,opacity}.butterfly svg{width:100%;height:100%;overflow:visible;filter:drop-shadow(0 3px 2px #8f36652b)}.butterfly .wing-left{transform-origin:50px 50px;animation:wing-flutter .22s ease-in-out infinite alternate}.butterfly .wing-right{transform-origin:50px 50px;animation:wing-flutter .22s ease-in-out infinite alternate-reverse}@keyframes wing-flutter{from{transform:scaleX(.25) rotate(-5deg)}to{transform:scaleX(1) rotate(7deg)}}@keyframes letter-swing{0%,100%{transform:rotate(-5deg) translateY(0)}50%{transform:rotate(4deg) translateY(-12px)}}@media(max-width:600px){.love-stage{min-height:510px;padding-top:25px}.love-envelope{width:310px;height:205px}.letter-kicker{font-size:8px;margin-bottom:110px}.love-paper h1{font-size:42px}.love-paper p{font-size:10px}.love-paper{padding:12px 8px}.heart-seal{width:68px;height:64px}.open-hint{font-size:14px;margin-top:35px}.star-a{right:-19px}.star-b{left:-20px}main{margin-top:8px;margin-bottom:65px}}@media(prefers-reduced-motion:reduce){.love-envelope{animation:none}.butterfly .wing-left,.butterfly .wing-right{animation:none}}
 </style><script>
 (()=>{const envelope=get('loveEnvelope'),seal=get('openLetter'),hint=get('openHint'),replay=get('replayLetter');let busy=false;
 function butterflies(origin = seal, layer = document.body){const r=origin.getBoundingClientRect(),x=r.left+r.width/2,y=r.top+r.height/2;const colors=[['#c87698','#ffe4ed'],['#a18ac9','#eee4ff'],['#78aebb','#dff5fa'],['#c4a16a','#fff0cf'],['#83ad9c','#e5f4ec'],['#b88db9','#f7e5f6']];for(let i=0;i<26;i++){const el=document.createElement('div'),c=colors[i%colors.length],size=22+Math.random()*56;el.className='butterfly';el.setAttribute('aria-hidden','true');el.style.width=size+'px';el.style.height=size+'px';el.innerHTML=`<svg viewBox="0 0 100 100"><g class="wing-left"><path d="M49 49C26 0 0 15 13 43Q16 54 44 57C3 50 14 92 36 78Q48 71 49 49" fill="${c[0]}" stroke="${c[1]}" stroke-width="2"/><path d="M43 47Q23 22 21 32M41 63L28 71" fill="none" stroke="${c[1]}" stroke-width="3"/><circle cx="23" cy="36" r="4" fill="${c[1]}"/></g><g class="wing-right"><path d="M51 49C74 0 100 15 87 43Q84 54 56 57C97 50 86 92 64 78Q52 71 51 49" fill="${c[0]}" stroke="${c[1]}" stroke-width="2"/><path d="M57 47Q77 22 79 32M59 63L72 71" fill="none" stroke="${c[1]}" stroke-width="3"/><circle cx="77" cy="36" r="4" fill="${c[1]}"/></g><path d="M50 38V72M49 41Q38 25 40 24M51 41Q62 25 60 24" stroke="#6d3659" stroke-width="3" stroke-linecap="round" fill="none"/></svg>`;layer.append(el);const side=i%2?1:-1,dx=side*(100+Math.random()*innerWidth*.55),dy=-(150+Math.random()*innerHeight*.7),delay=i*45;const motion=el.animate([{transform:`translate(${x-size/2}px,${y-size/2}px) scale(.2)`,opacity:0},{offset:.12,opacity:1},{offset:.45,transform:`translate(${x+dx*.35-size/2}px,${y+dy*.45+55}px) rotate(${side*18}deg) scale(1)`,opacity:1},{offset:.75,transform:`translate(${x+dx*.8-size/2}px,${y+dy*.7-40}px) rotate(${-side*16}deg)`,opacity:1},{transform:`translate(${x+dx}px,${y+dy}px) rotate(${side*25}deg) scale(.65)`,opacity:0}],{duration:3600+Math.random()*1800,delay,easing:'ease-out',fill:'both'});motion.onfinish=()=>el.remove();}}
@@ -145,7 +145,7 @@ seal.onclick = () => {
   }
   function revealGreeting() {
     envelope.classList.add('revealed');
-    hint.textContent = 'You have my whole heart. ♥';
+    hint.textContent = '';
     replay.hidden = false;
     envelope.dispatchEvent(new Event('invitation-revealed'));
   }
@@ -256,22 +256,33 @@ main:has(#about:not([hidden])){margin-top:15px;margin-bottom:35px;align-self:sta
 @font-face{font-family:"Wedding Calligraphy";src:url(data:font/woff;base64,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) format("woff");font-weight:400;font-display:swap}
 .entrance-heading{position:relative;z-index:1;display:grid;justify-items:center;margin:0 0 2vh;padding:0 18px;text-align:center;color:#88234f}
 .entrance-name{display:block;padding:0 .13em;font:400 clamp(60px,min(18vw,16dvh),148px)/1 "Wedding Calligraphy","Segoe Script",Georgia,cursive;text-shadow:0 2px #fff8f5,0 5px 18px #962e5328}
-.entrance-weds{display:flex;align-items:center;gap:13px;margin:clamp(12px,3vw,30px) 0 .34em;color:#875523;font:600 clamp(12px,2.8vw,16px)/1.4 Georgia,serif;letter-spacing:.25em;text-transform:uppercase}
-.entrance-weds::before,.entrance-weds::after{content:"";width:clamp(40px,9vw,78px);height:9px;background:radial-gradient(circle closest-side,#bc8a4e 95%,transparent) right center/7px 7px no-repeat,linear-gradient(90deg,transparent,#bc8a4e) left center/100% 1px no-repeat}
+.entrance-weds{display:flex;align-items:center;gap:clamp(8px,2.5vw,16px);margin:clamp(12px,3vw,30px) 0 .34em;color:#88561f;font:italic 500 clamp(19px,4vw,30px)/1.15 Georgia,"Times New Roman",serif;letter-spacing:.04em}
+.entrance-weds-label{text-shadow:0 1px #fff8eb}
+.entrance-weds::before,.entrance-weds::after{content:"";width:clamp(32px,8vw,72px);height:7px;background:radial-gradient(circle closest-side,#b87f36 95%,transparent) right center/5px 5px no-repeat,linear-gradient(90deg,transparent,#c59654) left center/100% 1px no-repeat}
 .entrance-weds::after{transform:scaleX(-1)}
 .entrance-scroll{position:absolute;inset:0;z-index:1;overflow-x:hidden;overflow-y:auto;overscroll-behavior-y:contain;scrollbar-width:none}
 #weddingEntrance.is-curtain-opening .entrance-scroll{overflow-y:hidden}
-#weddingEntrance.is-curtain-opening :is(.entrance-content,.entrance-more,.entrance-footer,.entrance-final-footer){visibility:hidden}
+#weddingEntrance.is-curtain-opening :is(.entrance-content,.entrance-more,.closing-carousel,.entrance-final-footer){visibility:hidden}
 .entrance-scroll::-webkit-scrollbar{display:none}
 .entrance-screen{position:relative;min-height:100%;display:grid;place-items:center}
 .entrance-more{position:relative;display:grid;place-items:start center;margin-top:-28px;padding:0 12px clamp(42px,8dvh,70px)}
-.entrance-footer{position:relative;isolation:isolate;margin-inline:clamp(12px,4vw,32px);border-radius:clamp(12px,3vw,22px);min-height:max(72dvh,calc(198px + env(safe-area-inset-bottom,0px)));overflow:hidden;background:radial-gradient(ellipse at 50% 15%,#842d49,#71223e 62%,#50142d)}
+.entrance-footer{position:relative;isolation:isolate;flex:0 0 100%;scroll-snap-align:start;min-height:max(72dvh,calc(198px + env(safe-area-inset-bottom,0px)));overflow:hidden;background:radial-gradient(ellipse at 50% 15%,#842d49,#71223e 62%,#50142d)}
+.closing-carousel{position:relative}
+.closing-track{display:flex;overflow-x:auto;scroll-snap-type:x mandatory;scrollbar-width:none}
+.closing-track::-webkit-scrollbar{display:none}
+.closing-carousel .event-arrow{top:50%;z-index:1}
+.closing-carousel .event-prev{left:4px}
+.closing-carousel .event-next{right:4px}
+.entrance-footer:nth-child(2){background:radial-gradient(ellipse at 50% 15%,#92425a,#792942 62%,#57192e)}
+.entrance-footer:nth-child(3){background:radial-gradient(ellipse at 50% 15%,#a04a64,#84334d 62%,#641e39)}
 .entrance-card-corner{position:absolute;width:clamp(62px,16vw,130px);height:auto;filter:drop-shadow(0 0 4px #edb65066)}
 .entrance-card-corner--tl{top:10px;left:10px}
 .entrance-card-corner--tr{top:10px;right:10px;transform:scaleX(-1)}
 .entrance-card-corner--bl{bottom:10px;left:10px;transform:scaleY(-1)}
 .entrance-card-corner--br{bottom:10px;right:10px;transform:scale(-1)}
-.entrance-final-footer{position:relative;box-sizing:border-box;display:grid;place-items:center;margin-top:clamp(32px,7dvh,64px);min-height:160px;padding:20px 16px calc(58px + env(safe-area-inset-bottom,0px));background:#611930;color:#ffe3a0;border-top:1px solid #e7b557;text-align:center;font:italic 500 clamp(19px,5.5vw,32px)/1.2 Georgia,serif}
+.entrance-final-footer{position:relative;box-sizing:border-box;display:grid;place-items:center;margin-top:clamp(32px,7dvh,64px);min-height:clamp(224px,32dvh,288px);margin-bottom:clamp(44px,8dvh,72px);padding:44px 16px calc(82px + env(safe-area-inset-bottom,0px));background:#611930;color:#ffe3a0;border-top:1px solid #e7b557;text-align:center;font:italic 500 clamp(19px,5.5vw,32px)/1.2 Georgia,serif}
+:is(.closing-carousel,.entrance-final-footer) .entrance-card-corner{width:clamp(38px,9vw,64px);opacity:.85;pointer-events:none}
+
 .feature-carousel{position:relative;width:min(100%,600px);display:grid;justify-items:center;padding:18px 0;touch-action:pan-y}
 .feature-cards{width:65%;aspect-ratio:1.78;display:grid;grid-template-columns:minmax(0,1fr);isolation:isolate}
 .entrance-feature-card{grid-area:1/1;display:grid;place-content:center;gap:6px;text-align:center;border-radius:8px;background:radial-gradient(ellipse at 50% 0%,#a34260 0%,#8a2e4d 57%,#71223e 100%);color:#ffe199;box-shadow:0 0 0 1px #d7a54170,0 0 16px #dfaf4b70,0 8px 18px #92591d38;transform:var(--feature-position)}
@@ -364,7 +375,7 @@ main:has(#about:not([hidden])){margin-top:15px;margin-bottom:35px;align-self:sta
 .entrance-brand{position:absolute;z-index:3;top:max(14px,env(safe-area-inset-top));left:6%;color:var(--wine)}
 @media(max-height:450px){
   #weddingEntrance .entrance-brand{top:6px;font-size:19px}
-  #weddingEntrance .entrance-brand .brandmark{width:26px;height:26px}
+  #weddingEntrance .entrance-brand .brandmark{width:36px;height:38px}
   #weddingEntrance .entrance-content{margin-top:0}
   #weddingEntrance .entrance-back{bottom:6px}
 }
@@ -393,13 +404,13 @@ main:has(#about:not([hidden])){margin-top:15px;margin-bottom:35px;align-self:sta
 <div class="entrance-scroll" tabindex="0" role="region" aria-label="Wedding invitation details">
 <div class="entrance-screen">
 <div class="brand entrance-brand"><span class="brandmark ganesha-brandmark" aria-hidden="true">
-  <svg viewBox="24 15 200 251" xmlns="http://www.w3.org/2000/svg" focusable="false">
+  <svg viewBox="28 19 192 244" xmlns="http://www.w3.org/2000/svg" focusable="false">
     <defs>
       <linearGradient id="entrance-ganesha-gold" x1="0" y1="0" x2="85%" y2="100%" gradientUnits="objectBoundingBox">
-        <stop stop-color="#9e5c07"/>
-        <stop offset=".32" stop-color="#e9a70d"/>
-        <stop offset=".62" stop-color="#ffe063"/>
-        <stop offset="1" stop-color="#ae6a09"/>
+        <stop stop-color="#86490a"/>
+        <stop offset=".32" stop-color="#cc8816"/>
+        <stop offset=".62" stop-color="#f5c143"/>
+        <stop offset="1" stop-color="#8a4908"/>
       </linearGradient>
     </defs>
     <g fill="none" stroke="url(#entrance-ganesha-gold)" stroke-linecap="round" stroke-linejoin="round">
@@ -419,7 +430,7 @@ main:has(#about:not([hidden])){margin-top:15px;margin-bottom:35px;align-self:sta
   </svg>
 </span> Marriage Invitation<span class="branddot">.</span></div>
 <div class="entrance-content">
-<h2 id="entranceGreeting" class="entrance-heading" tabindex="-1"><span class="entrance-name">Aryan</span> <span class="entrance-weds">Weds</span> <span class="entrance-name">Araya</span></h2>
+<h2 id="entranceGreeting" class="entrance-heading" tabindex="-1"><span class="entrance-name">Aryan</span> <span class="entrance-weds"><span class="entrance-weds-label">Weds</span></span> <span class="entrance-name">Araya</span></h2>
 <div class="event-carousel" role="region" aria-label="Wedding events">
   <div class="event-window"><div class="event-track"><article class="event-slide" aria-hidden="false"><h3>Tilak</h3><time datetime="2026-11-12">12-11-26</time></article><article class="event-slide" aria-hidden="true"><h3>Shubh Vivah</h3><time datetime="2026-11-14">14-11-26</time></article><article class="event-slide" aria-hidden="true"><h3>Bidai</h3><time datetime="2026-11-15">15-11-26</time></article></div></div>
   <button class="event-arrow event-prev" type="button" aria-label="Previous event">‹</button>
@@ -466,8 +477,8 @@ main:has(#about:not([hidden])){margin-top:15px;margin-bottom:35px;align-self:sta
     </div>
   </div>
 </div>
-<div class="entrance-footer" aria-hidden="true">
-  <svg width="0" height="0" style="position:absolute"><defs>
+<section class="closing-carousel" aria-label="Wedding keepsake cards">
+  <svg aria-hidden="true" width="0" height="0" style="position:absolute"><defs>
     <linearGradient id="entrance-card-gold" x2="100%" y2="100%">
       <stop stop-color="#fff0b5"/><stop offset=".45" stop-color="#dfaa47"/><stop offset=".72" stop-color="#ffe59a"/><stop offset="1" stop-color="#bc7e32"/>
     </linearGradient>
@@ -477,13 +488,35 @@ main:has(#about:not([hidden])){margin-top:15px;margin-bottom:35px;align-self:sta
       <circle cx="52" cy="51" r="2.4" fill="#ffe39a"/><circle cx="8" cy="114" r="2" fill="#f6cc72"/><circle cx="114" cy="8" r="2" fill="#f6cc72"/>
     </g>
   </defs></svg>
-  <svg class="entrance-card-corner entrance-card-corner--tl" viewBox="0 0 124 124"><use href="#entrance-card-vine"/></svg>
-  <svg class="entrance-card-corner entrance-card-corner--tr" viewBox="0 0 124 124"><use href="#entrance-card-vine"/></svg>
-  <svg class="entrance-card-corner entrance-card-corner--bl" viewBox="0 0 124 124"><use href="#entrance-card-vine"/></svg>
-  <svg class="entrance-card-corner entrance-card-corner--br" viewBox="0 0 124 124"><use href="#entrance-card-vine"/></svg>
-</div>
+  <div class="closing-track" tabindex="0" role="region" aria-label="Swipe or use the arrow keys to change cards">
+    <div class="entrance-footer" role="group" aria-label="Card 1 of 3">
+  <svg aria-hidden="true" class="entrance-card-corner entrance-card-corner--tl" viewBox="0 0 124 124"><use href="#entrance-card-vine"/></svg>
+  <svg aria-hidden="true" class="entrance-card-corner entrance-card-corner--tr" viewBox="0 0 124 124"><use href="#entrance-card-vine"/></svg>
+  <svg aria-hidden="true" class="entrance-card-corner entrance-card-corner--bl" viewBox="0 0 124 124"><use href="#entrance-card-vine"/></svg>
+  <svg aria-hidden="true" class="entrance-card-corner entrance-card-corner--br" viewBox="0 0 124 124"><use href="#entrance-card-vine"/></svg>
+    </div>
+    <div class="entrance-footer" role="group" aria-label="Card 2 of 3">
+  <svg aria-hidden="true" class="entrance-card-corner entrance-card-corner--tl" viewBox="0 0 124 124"><use href="#entrance-card-vine"/></svg>
+  <svg aria-hidden="true" class="entrance-card-corner entrance-card-corner--tr" viewBox="0 0 124 124"><use href="#entrance-card-vine"/></svg>
+  <svg aria-hidden="true" class="entrance-card-corner entrance-card-corner--bl" viewBox="0 0 124 124"><use href="#entrance-card-vine"/></svg>
+  <svg aria-hidden="true" class="entrance-card-corner entrance-card-corner--br" viewBox="0 0 124 124"><use href="#entrance-card-vine"/></svg>
+    </div>
+    <div class="entrance-footer" role="group" aria-label="Card 3 of 3">
+  <svg aria-hidden="true" class="entrance-card-corner entrance-card-corner--tl" viewBox="0 0 124 124"><use href="#entrance-card-vine"/></svg>
+  <svg aria-hidden="true" class="entrance-card-corner entrance-card-corner--tr" viewBox="0 0 124 124"><use href="#entrance-card-vine"/></svg>
+  <svg aria-hidden="true" class="entrance-card-corner entrance-card-corner--bl" viewBox="0 0 124 124"><use href="#entrance-card-vine"/></svg>
+  <svg aria-hidden="true" class="entrance-card-corner entrance-card-corner--br" viewBox="0 0 124 124"><use href="#entrance-card-vine"/></svg>
+    </div>
+  </div>
+  <button class="event-arrow event-prev" type="button" aria-label="Previous keepsake card">‹</button>
+  <button class="event-arrow event-next" type="button" aria-label="Next keepsake card">›</button>
+</section>
 <footer class="entrance-final-footer">
   <span>Aryan Weds Araya</span>
+  <svg aria-hidden="true" class="entrance-card-corner entrance-card-corner--tl" viewBox="0 0 124 124"><use href="#entrance-card-vine"/></svg>
+  <svg aria-hidden="true" class="entrance-card-corner entrance-card-corner--tr" viewBox="0 0 124 124"><use href="#entrance-card-vine"/></svg>
+  <svg aria-hidden="true" class="entrance-card-corner entrance-card-corner--bl" viewBox="0 0 124 124"><use href="#entrance-card-vine"/></svg>
+  <svg aria-hidden="true" class="entrance-card-corner entrance-card-corner--br" viewBox="0 0 124 124"><use href="#entrance-card-vine"/></svg>
 </footer>
 </div>
 <svg viewBox="0 0 420 540" aria-hidden="true" class="entrance-arch" xmlns="http://www.w3.org/2000/svg">
@@ -978,6 +1011,56 @@ main:has(#about:not([hidden])){margin-top:15px;margin-bottom:35px;align-self:sta
   });
 
 
+  const closingCarousel = page.querySelector('.closing-carousel');
+  const closingTrack = closingCarousel.querySelector('.closing-track');
+  const closingCards = [...closingTrack.children];
+  let closingIndex = 0;
+  let closingTimer;
+  let closingVisible = false;
+  let closingHovered = false;
+
+  function scheduleClosing() {
+    clearTimeout(closingTimer);
+    if (!closingVisible || closingHovered || page.hidden || reducedMotion.matches ||
+        page.classList.contains('is-curtain-opening')) return;
+    closingTimer = setTimeout(() => stepClosing(1), 4000);
+  }
+
+  function stepClosing(direction) {
+    closingIndex = (closingIndex + direction + closingCards.length) % closingCards.length;
+    closingTrack.scrollTo({
+      left: closingCards[closingIndex].offsetLeft,
+      behavior: reducedMotion.matches ? 'auto' : 'smooth'
+    });
+    scheduleClosing();
+  }
+
+  closingCarousel.querySelector('.event-prev').onclick = () => stepClosing(-1);
+  closingCarousel.querySelector('.event-next').onclick = () => stepClosing(1);
+  closingTrack.addEventListener('keydown', event => {
+    if (event.key !== 'ArrowLeft' && event.key !== 'ArrowRight') return;
+    event.preventDefault();
+    stepClosing(event.key === 'ArrowRight' ? 1 : -1);
+  });
+  closingTrack.addEventListener('scrollend', () => {
+    if (!closingTrack.clientWidth) return;
+    closingIndex = Math.round(closingTrack.scrollLeft / closingTrack.clientWidth);
+    scheduleClosing();
+  });
+  closingCarousel.addEventListener('pointerenter', event => {
+    if (event.pointerType === 'touch') return;
+    closingHovered = true;
+    clearTimeout(closingTimer);
+  });
+  closingCarousel.addEventListener('pointerleave', () => {
+    closingHovered = false;
+    scheduleClosing();
+  });
+  new IntersectionObserver(([entry]) => {
+    closingVisible = entry.isIntersecting;
+    scheduleClosing();
+  }, {root: page.querySelector('.entrance-scroll'), threshold: .35}).observe(closingCarousel);
+
   function playEntrance() {
     if (reducedMotion.matches) return;
     page.classList.add('is-curtain-opening');
@@ -991,6 +1074,7 @@ main:has(#about:not([hidden])){margin-top:15px;margin-bottom:35px;align-self:sta
     curtain.onfinish = () => {
       page.classList.remove('is-curtain-opening');
       schedulePortrait();
+      scheduleClosing();
       entranceMotion.push(content.animate(
         [{opacity: 0, transform: 'translateY(8px)'}, {opacity: 1, transform: 'none'}],
         {duration: 300, easing: 'ease-out'}
@@ -1006,6 +1090,8 @@ main:has(#about:not([hidden])){margin-top:15px;margin-bottom:35px;align-self:sta
     if (!page.hidden) return;
     if (shareDialog.open) shareDialog.close();
     page.hidden = false;
+    closingIndex = 0;
+    closingTrack.scrollLeft = 0;
     page.querySelector('.entrance-scroll').scrollTop = 0;
     page.prepend(hearts);
     for (const element of document.querySelectorAll('header, main, #shareArea, footer:not(.entrance-final-footer)')) {
@@ -1024,6 +1110,8 @@ main:has(#about:not([hidden])){margin-top:15px;margin-bottom:35px;align-self:sta
   function showCard() {
     if (page.hidden) return;
     clearTimeout(eventTimer);
+    clearTimeout(closingTimer);
+    closingHovered = false;
     carouselHovered = false;
     clearTimeout(featureTimer);
     clearTimeout(portraitTimer);
@@ -1062,7 +1150,7 @@ main:has(#about:not([hidden])){margin-top:15px;margin-bottom:35px;align-self:sta
   page.addEventListener('keydown', (event) => {
     if (event.key === 'Escape') page.querySelector('.entrance-back').click();
     if (event.key === 'Tab') {
-      const buttons = [...page.querySelectorAll('button, .entrance-scroll, .portrait-track')];
+      const buttons = [...page.querySelectorAll('button, .entrance-scroll, .portrait-track, .closing-track')];
       const index = buttons.indexOf(document.activeElement);
       const next = index < 0 ? (event.shiftKey ? buttons.length - 1 : 0) :
         (index + (event.shiftKey ? -1 : 1) + buttons.length) % buttons.length;
